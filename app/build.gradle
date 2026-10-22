@@ -1,5 +1,5 @@
 plugins { id 'com.android.application' }
-android { namespace 'za.ac.pantry'; compileSdk 35
+android { namespace 'za.ac.pantry'; compileSdk 35; buildToolsVersion '35.0.0'
  defaultConfig { applicationId 'za.ac.pantry'; minSdk 26; targetSdk 35; versionCode 1; versionName '1.0'; testInstrumentationRunner 'za.ac.pantry.test.DatabaseChecks' }
  compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
 }
