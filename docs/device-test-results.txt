@@ -1,0 +1,2 @@
+PASS: SQLite create/read/update/delete, reopen persistence, 20 complete recipes and idempotent seed.
+

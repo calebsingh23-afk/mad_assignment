@@ -1,0 +1,16 @@
+0c1e482 2026-10-23T00:17:43+02:00 Initialize Java Android project and document offline SQLite architecture
+ff61280 2026-10-23T00:17:44+02:00 Add ingredient models and strict quantity matching with unit conversion
+4daa9b4 2026-10-23T00:17:44+02:00 Implement SQLite schema and persistent pantry create read update delete
+aef4ec7 2026-10-23T00:17:45+02:00 Seed twenty complete recipes with explicit ingredient quantities and methods
+770e080 2026-10-23T00:19:37+02:00 Create cream forest and terracotta UI system with background database executor
+ade156b 2026-10-23T00:19:37+02:00 Build persistent pantry list with custom adapter expiry badges and navigation
+e212ba3 2026-10-23T00:19:38+02:00 Implement validated ingredient editor and confirmed deletion flow
+62c81e7 2026-10-23T00:19:38+02:00 Add strict recipe suggestions and informative zero match screen
+2fd1d77 2026-10-23T00:19:38+02:00 Show recipe quantities and numbered preparation steps using intent IDs
+3c6264f 2026-10-23T00:19:38+02:00 Persist expiry alert preference and explain ingredient matching policy
+53543c0 2026-10-23T00:20:23+02:00 Test strict matching boundaries aliases duplicate stock units and expiry
+82e0c67 2026-10-23T00:20:23+02:00 Respect Android 15 system bar insets for legible screen content
+6a845d0 2026-10-23T00:35:06+02:00 Add portable Gradle wrapper for reproducible Android Studio builds
+04d28b5 2026-10-23T00:36:10+02:00 Add Android SQLite integration checks and format Java for code review
+32901dc 2026-10-23T00:43:02+02:00 Pin installed build tools and add original plate and leaf launcher icon
+86468e7 2026-10-23T00:53:59+02:00 Refine keyboard behaviour after emulator review and document verification steps

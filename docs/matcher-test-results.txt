@@ -1,0 +1,18 @@
+PASS empty pantry
+PASS one missing ingredient excluded
+PASS all requirements exact boundary
+PASS insufficient quantity
+PASS case space plural aliases
+PASS kilograms to grams
+PASS litres to millilitres
+PASS mass cannot substitute volume
+PASS count cannot substitute mass
+PASS duplicate stocks aggregate
+PASS duplicate requirements aggregate
+PASS expired excluded
+PASS expiry today accepted
+PASS expired duplicate does not inflate stock
+PASS empty recipe rejected
+PASS extra pantry ingredients allowed
+PASS five requirements four excluded
+17 matching checks passed
