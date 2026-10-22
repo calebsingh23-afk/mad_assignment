@@ -4,3 +4,4 @@ Matcher: all 17 pure Java checks passed.
 SQLite instrumentation: create, read, update, delete, close and reopen persistence, 20 complete recipes and idempotent seed passed.
 UI evidence: actual emulator captures document the five screens, validation, CRUD, strict matching and process relaunch.
 Scope of verification: runtime checks were performed on API 26. Android 15 inset handling is implemented but was not runtime-tested on API 35.
+GitHub: public repository confirmed; incremental history pushed successfully and remote main verified against local HEAD.
