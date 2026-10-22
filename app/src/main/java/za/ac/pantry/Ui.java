@@ -22,6 +22,10 @@ final class Ui {
     static LinearLayout page(Activity a,String eyebrow,String title,String subtitle,Class<?> selected) {
         a.getWindow().setStatusBarColor(BG);a.getWindow().setNavigationBarColor(BG);
         LinearLayout root=column(a);root.setBackgroundColor(BG);root.setPadding(dp(a,22),dp(a,12),dp(a,22),dp(a,10));
+        if(android.os.Build.VERSION.SDK_INT>=35) root.setOnApplyWindowInsetsListener((v,insets)->{
+            android.graphics.Insets bars=insets.getInsets(WindowInsets.Type.systemBars());
+            v.setPadding(dp(a,22)+bars.left,dp(a,12)+bars.top,dp(a,22)+bars.right,dp(a,10)+bars.bottom);return insets;
+        });
         TextView brand=text(a,"P / P     PANTRY & PLATE",13,GREEN);brand.setLetterSpacing(.16f);root.addView(brand);gap(root,18);
         root.addView(text(a,eyebrow.toUpperCase(Locale.ROOT),12,CLAY));root.addView(title(a,title));root.addView(text(a,subtitle,14,MUTED));gap(root,12);
         LinearLayout content=column(a);root.addView(content,new LinearLayout.LayoutParams(-1,0,1));
