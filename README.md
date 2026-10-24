@@ -7,6 +7,8 @@ SQLiteOpenHelper provides private, offline persistence without accounts, interne
 ## Run
 Open this folder in Android Studio. Install Android SDK 35 and use JDK 17 or 21. Sync Gradle, create an API 35 emulator (or connect an Android 8+ phone), then Run app. On Windows use gradlew.bat assembleDebug. No API keys or permissions required.
 
+On Windows, projects opened from a OneDrive path automatically keep generated build files under `%LOCALAPPDATA%/PantryAndPlate/builds` to avoid sync-related deletion failures. After updating the root build.gradle file, use File > Sync Project with Gradle Files before running so Android Studio discovers the new output location. Projects outside OneDrive retain the normal build folders.
+
 AI assistance was used in implementation and documentation. Review and understand all code before submission. The student must provide their own declaration and narration.
 
 ## Matching policy

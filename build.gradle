@@ -1,1 +1,14 @@
 plugins { id 'com.android.application' version '8.7.3' apply false }
+
+// Keep generated Android files outside OneDrive to avoid sync file locks.
+// Android Studio discovers the relocated APK and intermediates through Gradle sync.
+if (System.getProperty('os.name').toLowerCase(java.util.Locale.ROOT).contains('windows')
+        && rootDir.absolutePath.toLowerCase(java.util.Locale.ROOT).contains('onedrive')) {
+    def localFolder = System.getenv('LOCALAPPDATA') ?: System.getProperty('java.io.tmpdir')
+    def projectKey = Integer.toHexString(rootDir.absolutePath.hashCode())
+    def generatedRoot = new File(localFolder, "PantryAndPlate/builds/${projectKey}")
+    allprojects { currentProject ->
+        def moduleFolder = currentProject.path == ':' ? 'root' : currentProject.path.substring(1).replace(':', '/')
+        currentProject.layout.buildDirectory.set(new File(generatedRoot, moduleFolder))
+    }
+}
